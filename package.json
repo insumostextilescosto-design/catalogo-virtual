@@ -1,0 +1,14 @@
+{
+  "name": "itac-catalogo-virtual",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Catálogo web público de Insumos y Textiles al Costo (ITAC)",
+  "homepage": "https://insumostextilescosto-design.github.io/catalogo-virtual/",
+  "scripts": {
+    "deploy": "node deploy.js"
+  },
+  "devDependencies": {
+    "gh-pages": "6.3.0"
+  }
+}
+
