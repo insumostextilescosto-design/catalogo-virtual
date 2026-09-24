@@ -11,7 +11,7 @@ ghpages.publish(
   {
     repo,
     branch: "gh-pages",
-    src: ["index.html"],
+    src: ["index.html", "assets/**/*"],
     nojekyll: true,
     silent: true,
     message: "Deploy ITAC catalog",
