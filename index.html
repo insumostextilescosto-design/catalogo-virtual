@@ -16,7 +16,7 @@
 .wa-icon{width:16px;height:16px;flex:none}.cart-actions #whatsapp{gap:7px;justify-content:center}.button:disabled{opacity:.46;cursor:not-allowed;transform:none}
 
 /* Fotografías originales recortadas con transparencia. */
-.product-photo{background:#f4f8fc}.product-photo img{object-fit:contain;padding:12px}.detail-image{background:#f4f8fc}.detail-image img{object-fit:contain}
+.product-photo{background:#f4f8fc}.product-photo img{object-fit:contain;padding:12px}.detail-image{background:#f4f8fc}.detail-image img{object-fit:contain}.photo-pending{height:100%;display:grid;place-items:center;color:#b3c5d8;background:linear-gradient(135deg,#f7fbff,#eaf3fb)}.photo-pending span{font:800 30px var(--display);letter-spacing:.18em;opacity:.7}.detail-image .photo-pending{min-height:400px}
 
 
   </style>
@@ -33,16 +33,16 @@
       <div class="hero-copy">
         <span class="eyebrow"><i></i> Textiles que inspiran</span>
         <h1>El detalle que<br><em>hace la diferencia.</em></h1>
-        <p>Encuentra insumos textiles de calidad a precios que cuidan tu presupuesto.</p>
+        <p>Encuentra 36 insumos textiles de calidad a precios que cuidan tu presupuesto.</p>
         <a class="button button-light" href="#catalogo">Explorar catálogo <span>↘</span></a>
         <div class="hero-notes"><span>✳ Calidad al costo</span><span>⌁ Envíos a domicilio</span></div>
       </div>
-      <div class="hero-visual"><div class="hero-orbit"></div><img class="hero-lace" src="assets/encaje-rojo.webp" alt="Muestra de encaje rojo ITAC"><div class="hero-tag"><strong>09</strong><span>productos<br>para crear</span></div><div class="hero-stamp">HECHO PARA<br>INSPIRAR</div></div>
+      <div class="hero-visual"><div class="hero-orbit"></div><img class="hero-lace" src="assets/encaje-rojo.webp" alt="Muestra de encaje rojo ITAC"><div class="hero-tag"><strong>36</strong><span>productos<br>para crear</span></div><div class="hero-stamp">HECHO PARA<br>INSPIRAR</div></div>
       <div class="hero-index">ITAC / 01</div>
     </section>
     <section class="catalog section-wrap" id="catalogo">
       <div class="section-head"><div><span class="eyebrow dark">Selección ITAC <i></i></span><h2>Pequeños detalles.<br><em>Grandes ideas.</em></h2></div><p>Insumos para dar vida a tus proyectos, con la calidad y el precio que buscas.</p></div>
-      <div class="toolbar"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Buscar productos o descripción…" aria-label="Buscar productos o descripción"></label><div class="category-tabs" role="tablist" aria-label="Categorías de productos"><button class="category-tab active" type="button" role="tab" aria-selected="true" data-category="Encaje">Encaje</button><button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Herrajes">Herrajes</button><button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Abrochadura">Abrochadura</button><button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Elásticos">Elásticos</button><button class="category-tab" type="button" role="tab" aria-selected="false" data-category="La rebaja del mes">La rebaja del mes</button></div><label class="select-label sort-label"><span>Ordenar</span><select id="sort"><option value="recent">Reciente</option><option value="price-asc">Precio: menor a mayor</option><option value="price-desc">Precio: mayor a menor</option></select></label></div>
+      <div class="toolbar"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Buscar productos o descripción…" aria-label="Buscar productos o descripción"></label><div class="category-tabs" role="tablist" aria-label="Categorías de productos"><button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Herrajes">Herrajes</button><button class="category-tab active" type="button" role="tab" aria-selected="true" data-category="Encaje">Encaje</button><button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Sesgo elástico">Sesgo elástico</button><button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Elástico cargadera">Elástico cargadera</button><button class="category-tab" type="button" role="tab" aria-selected="false" data-category="Elástico plano afelpado">Elástico plano afelpado</button></div><label class="select-label sort-label"><span>Ordenar</span><select id="sort"><option value="recent">Reciente</option><option value="price-asc">Precio: menor a mayor</option><option value="price-desc">Precio: mayor a menor</option></select></label></div>
       <div class="catalog-meta"><span id="result-count">9 productos</span><span>Precios en pesos colombianos</span></div>
       <div id="product-grid" class="product-grid"></div>
       <div id="empty-state" class="empty-state" hidden></div>
@@ -62,15 +62,42 @@ window.ITAC_ASSETS = {"assets/abrochaduras.png":"assets/abrochaduras.webp","asse
 </script>
   <script>
 window.ITAC_PRODUCTS = [
-  {id:"itac-encaje-delgado-rojo",name:"Encaje delgado · Rojo",kind:"Encaje delgado",color:"Rojo",price:1200,unit:"metro",image:"assets/encaje-rojo.png",description:"Encaje delgado rojo. Precio por metro."},
-  {id:"itac-encaje-delgado-rosado",name:"Encaje delgado · Rosado",kind:"Encaje delgado",color:"Rosado",price:1250,unit:"metro",image:"assets/encaje-rosado.png",description:"Encaje delgado rosado. Precio por metro."},
-  {id:"itac-encaje-delgado-negro",name:"Encaje delgado · Negro",kind:"Encaje delgado",color:"Negro",price:1300,unit:"metro",image:"assets/encaje-negro.png",description:"Encaje delgado negro. Precio por metro."},
-  {id:"itac-encaje-delgado-blanco",name:"Encaje delgado · Blanco",kind:"Encaje delgado",color:"Blanco",price:1400,unit:"metro",image:"assets/encaje-blanco.png",swatch:"#f4f1e8",description:"Encaje delgado blanco. Precio por metro."},
-  {id:"itac-abrochadura-negra",name:"Abrochadura · Negra",kind:"Abrochadura",color:"Negra",price:300,unit:"unidad",image:"assets/abrochaduras.png",description:"Abrochadura negra. Precio por unidad."},
-  {id:"itac-abrochadura-blanca",name:"Abrochadura · Blanca",kind:"Abrochadura",color:"Blanca",price:300,unit:"unidad",image:"assets/abrochaduras.png",swatch:"#f4f1e8",description:"Abrochadura blanca. Precio por unidad."},
-  {id:"itac-abrochadura-roja",name:"Abrochadura · Roja",kind:"Abrochadura",color:"Roja",price:300,unit:"unidad",image:"assets/abrochaduras.png",swatch:"#dc2441",description:"Abrochadura roja. Precio por unidad."},
-  {id:"itac-encaje-grueso-negro",name:"Encaje grueso · Negro",kind:"Encaje grueso",color:"Negro",price:1750,unit:"metro",image:"assets/encaje-grueso.png",description:"Encaje grueso negro. Precio por metro."},
-  {id:"itac-encaje-grueso-rojo",name:"Encaje grueso · Rojo",kind:"Encaje grueso",color:"Rojo",price:1750,unit:"metro",image:"assets/encaje-grueso-rojo.png",swatch:"#dc2441",description:"Encaje grueso rojo. Precio por metro."}
+  {id:"itac-corazon-10-mm-dorado",name:"CORAZON 10 MM DORADO",kind:"Herrajes",color:"DORADO",price:80,unit:"unidad",image:"",description:"Corazon 10 mm dorado. Precio por unidad."},
+  {id:"itac-corazon-20-mm-dorado",name:"CORAZON 20 MM DORADO",kind:"Herrajes",color:"DORADO",price:140,unit:"unidad",image:"",description:"Corazon 20 mm dorado. Precio por unidad."},
+  {id:"itac-corazon-10-mm-plata",name:"CORAZON 10 MM PLATA",kind:"Herrajes",color:"PLATA",price:70,unit:"unidad",image:"",description:"Corazon 10 mm plata. Precio por unidad."},
+  {id:"itac-corazon-20-mm-plata",name:"CORAZON 20 MM PLATA",kind:"Herrajes",color:"PLATA",price:120,unit:"unidad",image:"",description:"Corazon 20 mm plata. Precio por unidad."},
+  {id:"itac-tensor-8-mm-plata",name:"TENSOR 8 MM PLATA",kind:"Herrajes",color:"PLATA",price:19,unit:"unidad",image:"",description:"Tensor 8 mm plata. Precio por unidad."},
+  {id:"itac-tensor-10-mm-plata",name:"TENSOR 10 MM PLATA",kind:"Herrajes",color:"PLATA",price:19,unit:"unidad",image:"",description:"Tensor 10 mm plata. Precio por unidad."},
+  {id:"itac-tensor-10-mm-dorado",name:"TENSOR 10 MM DORADO",kind:"Herrajes",color:"DORADO",price:25,unit:"unidad",image:"",description:"Tensor 10 mm dorado. Precio por unidad."},
+  {id:"itac-tensor-15-mm-plata",name:"TENSOR 15 MM PLATA",kind:"Herrajes",color:"PLATA",price:30,unit:"unidad",image:"",description:"Tensor 15 mm plata. Precio por unidad."},
+  {id:"itac-zeta-8-mm-plata",name:"ZETA 8 MM PLATA",kind:"Herrajes",color:"PLATA",price:22,unit:"unidad",image:"",description:"Zeta 8 mm plata. Precio por unidad."},
+  {id:"itac-zeta-10-mm-plata",name:"ZETA 10 MM PLATA",kind:"Herrajes",color:"PLATA",price:22,unit:"unidad",image:"",description:"Zeta 10 mm plata. Precio por unidad."},
+  {id:"itac-zeta-15-mm-plata",name:"ZETA 15 MM PLATA",kind:"Herrajes",color:"PLATA",price:33,unit:"unidad",image:"",description:"Zeta 15 mm plata. Precio por unidad."},
+  {id:"itac-zeta-20-mm-plata",name:"ZETA 20 MM PLATA",kind:"Herrajes",color:"PLATA",price:50,unit:"unidad",image:"",description:"Zeta 20 mm plata. Precio por unidad."},
+  {id:"itac-zeta-10-mm-dorada",name:"ZETA 10 MM DORADA",kind:"Herrajes",color:"DORADA",price:30,unit:"unidad",image:"",description:"Zeta 10 mm dorada. Precio por unidad."},
+  {id:"itac-aro-8-mm-plata",name:"ARO 8 MM PLATA",kind:"Herrajes",color:"PLATA",price:19,unit:"unidad",image:"",description:"Aro 8 mm plata. Precio por unidad."},
+  {id:"itac-aro-10-mm-plata",name:"ARO 10 MM PLATA",kind:"Herrajes",color:"PLATA",price:19,unit:"unidad",image:"",description:"Aro 10 mm plata. Precio por unidad."},
+  {id:"itac-aro-15-mm-plata",name:"ARO 15 MM PLATA",kind:"Herrajes",color:"PLATA",price:30,unit:"unidad",image:"",description:"Aro 15 mm plata. Precio por unidad."},
+  {id:"itac-aro-20-mm-plata",name:"ARO 20 MM PLATA",kind:"Herrajes",color:"PLATA",price:40,unit:"unidad",image:"",description:"Aro 20 mm plata. Precio por unidad."},
+  {id:"itac-aro-10-mm-dorado",name:"ARO 10 MM DORADO",kind:"Herrajes",color:"DORADO",price:25,unit:"unidad",image:"",description:"Aro 10 mm dorado. Precio por unidad."},
+  {id:"itac-encaje-negro-azul-rey",name:"ENCAJE NEGRO AZUL REY",kind:"Encaje",color:"NEGRO",price:1450,unit:"metro",image:"",description:"Encaje negro azul rey. Precio por metro."},
+  {id:"itac-encaje-negro-rojo",name:"ENCAJE NEGRO ROJO",kind:"Encaje",color:"NEGRO",price:1550,unit:"metro",image:"",description:"Encaje negro rojo. Precio por metro."},
+  {id:"itac-encaje-negro-fucsia",name:"ENCAJE NEGRO FUCSIA",kind:"Encaje",color:"NEGRO",price:1550,unit:"metro",image:"",description:"Encaje negro fucsia. Precio por metro."},
+  {id:"itac-sesgo-elastico-1-6-cm-azul-bebe",name:"SESGO ELASTICO 1,6 CM AZUL BEBE",kind:"Sesgo elástico",color:"AZUL BEBE",price:170,unit:"metro",image:"",description:"Sesgo elastico 1,6 cm azul bebe. Precio por metro."},
+  {id:"itac-sesgo-elastico-1-6-cm-rosado-barbie",name:"SESGO ELASTICO 1,6 CM ROSADO BARBIE",kind:"Sesgo elástico",color:"ROSADO BARBIE",price:170,unit:"metro",image:"",description:"Sesgo elastico 1,6 cm rosado barbie. Precio por metro."},
+  {id:"itac-sesgo-elastico-1-6-cm-rosado-claro",name:"SESGO ELASTICO 1,6 CM ROSADO CLARO",kind:"Sesgo elástico",color:"ROSADO CLARO",price:170,unit:"metro",image:"",description:"Sesgo elastico 1,6 cm rosado claro. Precio por metro."},
+  {id:"itac-sesgo-elastico-1-6-cm-vinotinto",name:"SESGO ELASTICO 1,6 CM VINOTINTO",kind:"Sesgo elástico",color:"VINOTINTO",price:170,unit:"metro",image:"",description:"Sesgo elastico 1,6 cm vinotinto. Precio por metro."},
+  {id:"itac-sesgo-elastico-1-6-cm-azul-oscuro",name:"SESGO ELASTICO 1,6 CM AZUL OSCURO",kind:"Sesgo elástico",color:"AZUL OSCURO",price:170,unit:"metro",image:"",description:"Sesgo elastico 1,6 cm azul oscuro. Precio por metro."},
+  {id:"itac-sesgo-elastico-1-6-cm-negro",name:"SESGO ELASTICO 1,6 CM NEGRO",kind:"Sesgo elástico",color:"NEGRO",price:170,unit:"metro",image:"",description:"Sesgo elastico 1,6 cm negro. Precio por metro."},
+  {id:"itac-sesgo-elastico-1-6-cm-lila",name:"SESGO ELASTICO 1,6 CM LILA",kind:"Sesgo elástico",color:"LILA",price:170,unit:"metro",image:"",description:"Sesgo elastico 1,6 cm lila. Precio por metro."},
+  {id:"itac-sesgo-elastico-1-6-cm-blanco",name:"SESGO ELASTICO 1,6 CM BLANCO",kind:"Sesgo elástico",color:"BLANCO",price:170,unit:"metro",image:"",description:"Sesgo elastico 1,6 cm blanco. Precio por metro."},
+  {id:"itac-sesgo-elastico-1-6-cm-azul-rey",name:"SESGO ELASTICO 1,6 CM AZUL REY",kind:"Sesgo elástico",color:"AZUL REY",price:170,unit:"metro",image:"",description:"Sesgo elastico 1,6 cm azul rey. Precio por metro."},
+  {id:"itac-sesgo-elastico-1-6-cm-rojo",name:"SESGO ELASTICO 1,6 CM ROJO",kind:"Sesgo elástico",color:"ROJO",price:170,unit:"metro",image:"",description:"Sesgo elastico 1,6 cm rojo. Precio por metro."},
+  {id:"itac-elastico-cargadera-10-mm-blanco",name:"ELASTICO CARGADERA 10 MM BLANCO",kind:"Elástico cargadera",color:"BLANCO",price:300,unit:"metro",image:"",description:"Elastico cargadera 10 mm blanco. Precio por metro."},
+  {id:"itac-elastico-cargadera-10-mm-rojo",name:"ELASTICO CARGADERA 10 MM ROJO",kind:"Elástico cargadera",color:"ROJO",price:300,unit:"metro",image:"",description:"Elastico cargadera 10 mm rojo. Precio por metro."},
+  {id:"itac-elastico-afelpado-20-mm-rojo",name:"ELASTICO AFELPADO 20 MM ROJO",kind:"Elástico plano afelpado",color:"ROJO",price:700,unit:"metro",image:"",description:"Elastico afelpado 20 mm rojo. Precio por metro."},
+  {id:"itac-elastico-afelpado-20-mm-negro",name:"ELASTICO AFELPADO 20 MM NEGRO",kind:"Elástico plano afelpado",color:"NEGRO",price:700,unit:"metro",image:"",description:"Elastico afelpado 20 mm negro. Precio por metro."},
+  {id:"itac-elastico-afelpado-20-mm-blanco",name:"ELASTICO AFELPADO 20 MM BLANCO",kind:"Elástico plano afelpado",color:"BLANCO",price:700,unit:"metro",image:"",description:"Elastico afelpado 20 mm blanco. Precio por metro."}
 ];
 
 </script>
@@ -95,8 +122,8 @@ window.ITAC_PRODUCTS = [
   function loadCartParam(value){const next={};for(const part of (value||'').split(',')){const [id,q]=part.split(':');if(byId.has(id)&&Number(q)>0)next[id]=Math.min(999,Math.floor(Number(q)));}cart=next;localStorage.setItem(cartKey,JSON.stringify(cart));}
   function toast(text){const t=$('toast');t.textContent=text;t.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>t.classList.remove('show'),2200);}
   function assetFor(p){return window.ITAC_ASSETS?.[p.image]||p.image;}
-  function productImage(p){return `<img src="${assetFor(p)}" alt="${p.name}" loading="lazy">`;}
-  function categoryFor(p){return /^encaje/i.test(p.kind)?'Encaje':p.kind==='Abrochadura'?'Abrochadura':p.kind;}
+  function productImage(p){return p.image ? `<img src="${assetFor(p)}" alt="${p.name}" loading="lazy">` : `<div class="photo-pending" aria-label="Fotografía no disponible"><span>ITAC</span></div>`;}
+  function categoryFor(p){return p.kind;}
   function setCategory(category){activeCategory=category;document.querySelectorAll('.category-tab').forEach(tab=>{const active=tab.dataset.category===category;tab.classList.toggle('active',active);tab.setAttribute('aria-selected',String(active));});renderProducts();}
   function visibleProducts(){let list=[...products];const q=query().get('productos');if(q){const ids=new Set(q.split(',').filter(id=>byId.has(id)));if(ids.size)list=list.filter(p=>ids.has(p.id));}const term=search.value.trim().toLocaleLowerCase('es');if(term)list=list.filter(p=>`${p.name} ${p.description} ${p.kind} ${p.color}`.toLocaleLowerCase('es').includes(term));list=list.filter(p=>categoryFor(p)===activeCategory);if(sort.value==='price-asc')list.sort((a,b)=>a.price-b.price);if(sort.value==='price-desc')list.sort((a,b)=>b.price-a.price);return list;}
   function renderProducts(){const list=visibleProducts();grid.innerHTML=list.map(p=>`<article class="product-card" data-product="${p.id}" tabindex="0" aria-label="Ver ${p.name}"><div class="product-photo">${productImage(p)}<span class="swatch" style="background:${p.swatch||colorFor(p.color)}"></span><span class="product-kind">${p.kind}</span><button class="add-mini" data-add="${p.id}" aria-label="Añadir ${p.name} al carrito">+</button></div><div class="product-info"><div><h3>${p.name}</h3><p>${p.description}</p></div><div class="product-price">${money(p.price)}<small> / ${p.unit}</small></div></div></article>`).join('');$('result-count').textContent=`${list.length} ${list.length===1?'producto':'productos'}`;$('empty-state').hidden=list.length!==0;$('empty-state').textContent=products.some(p=>categoryFor(p)===activeCategory)?'No encontramos productos con esa búsqueda.':'Aún no hay productos disponibles en esta categoría.';}
